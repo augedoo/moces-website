@@ -1,0 +1,28 @@
+.screen {
+  &-home {
+    min-height: 80vh;
+
+    #showcase {
+      height: 70vh;
+      background-color: $dark;
+      padding-top: 4rem;
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 600px;
+        gap: 2rem;
+        color: $light;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+      }
+
+      .slides {
+        border-radius: 25px;
+        overflow: hidden;
+      }
+    }
+  }
+}

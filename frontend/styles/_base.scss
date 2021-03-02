@@ -1,9 +1,86 @@
 // * Config
-
-// * Resets
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 // * Variables
+$primary-color: #f79930;
+$dark: #333;
+$light: #f4f4f4;
+$medium: #ccc;
+$max-width: 1200px;
 
 // * Mixins
 
+// * Functions
+// Set text color
+@function setTextColor($color) {
+  @if (lightness($color) > 50) {
+    @return #111;
+  } @else {
+    @return #fff;
+  }
+}
+
+// * Resets
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+p,
+a {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
 // * Utility Classes.
+.container {
+  max-width: $max-width;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  padding: 0.65rem 0.85rem;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  background: $light;
+  border-radius: 3px;
+  display: inline-block;
+
+  &-small {
+    padding: 0.5rem 0.75rem;
+  }
+
+  &-medium {
+    padding: 0.75rem 1.25rem;
+  }
+
+  &-large {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 1.75rem;
+  }
+}
