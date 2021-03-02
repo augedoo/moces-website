@@ -52,19 +52,24 @@ img {
   min-height: 80vh; }
   .screen-home #showcase {
     height: 70vh;
-    background-color: #333;
     padding-top: 4rem; }
     .screen-home #showcase .container {
       display: grid;
       grid-template-columns: 1fr 600px;
-      gap: 2rem;
-      color: #f4f4f4; }
+      gap: 2rem; }
     .screen-home #showcase h1 {
-      text-transform: uppercase;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      width: 90%;
+      line-height: 1.4;
+      letter-spacing: 2px;
+      color: #555; }
     .screen-home #showcase .slides {
       border-radius: 25px;
-      overflow: hidden; }
+      overflow: hidden;
+      box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6, 4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset; }
+      .screen-home #showcase .slides img {
+        height: 100%;
+        width: 100%; }
 
 .main-header {
   border-bottom: 5px solid #f79930;
