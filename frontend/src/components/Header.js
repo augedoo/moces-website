@@ -54,27 +54,30 @@ const Header = () => {
                 About
               </Link>
             </li>
-
-            <li>
-              <Link
-                to='/login'
-                className={currentPath === '/login' ? 'active' : ''}
-              >
-                Log In
-              </Link>
-            </li>
-            <li>
-              <Link
-                to='/signup'
-                className={`${
-                  currentPath === '/signup' ? 'active' : ''
-                } signup-btn btn`}
-              >
-                Join Us
-              </Link>
-            </li>
           </ul>
         </nav>
+        {/* <ul className='auth-links'>
+          <li>
+            <Link
+              to='/login'
+              className={`${
+                currentPath === '/login' ? 'active' : ''
+              } login-btn btn btn-medium`}
+            >
+              Log In
+            </Link>
+          </li>
+          <li>
+            <Link
+              to='/signup'
+              className={`${
+                currentPath === '/signup' ? 'active' : ''
+              } signup-btn btn btn-medium btn-dark`}
+            >
+              Join Us
+            </Link>
+          </li>
+        </ul>*/}
       </div>
     </header>
   );
