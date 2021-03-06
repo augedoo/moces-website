@@ -4,7 +4,7 @@ const NewsScreen = () => {
   return (
     <section id='screen-news' class='screen-news bg-light py-2'>
       <div class='container'>
-        <h2>Editor Picks</h2>
+        <h1>Recent News</h1>
 
         <div class='articles-wrapper'>
           <article class='card p-1'>
