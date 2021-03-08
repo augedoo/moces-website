@@ -1,4 +1,5 @@
 import React from 'react';
+import Pagination from '../components/Pagination';
 
 const NewsScreen = () => {
   return (
@@ -96,6 +97,8 @@ const NewsScreen = () => {
             </div>
           </article>
         </div>
+
+        <Pagination />
       </div>
     </section>
   );

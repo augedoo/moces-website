@@ -48,7 +48,8 @@ img {
   color: #1a3649; }
 
 .card {
-  background: #fff; }
+  background: #fff;
+  box-shadow: 0px 7px 14px rgba(59, 65, 94, 0.05), 0px 7px 14px rgba(0, 0, 0, 0.05); }
 
 .bg-light {
   background: #f4f4f4;
@@ -214,6 +215,7 @@ img {
 
 .screen-news {
   padding: 2rem;
+  background: #edf2f9;
   /* About Us */
   /* Articles */ }
   .screen-news h1 {
@@ -444,3 +446,35 @@ img {
       display: flex;
       align-items: center;
       justify-content: space-between; }
+
+.pagination {
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .pagination .boxes {
+    display: flex; }
+  .pagination button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: none;
+    padding: 1rem;
+    margin: 0 0.25rem;
+    border: solid 1px #1a3649;
+    border-radius: 3px;
+    transition: 0.5s;
+    font-weight: bold;
+    color: #1a3649; }
+    .pagination button:hover {
+      background: #f79930; }
+    .pagination button.active {
+      background-color: #f79930; }
+  .pagination .next,
+  .pagination .prev {
+    margin: 0 3rem; }
