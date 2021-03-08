@@ -151,7 +151,7 @@ const NewsScreen = () => {
           <article className='card'>
             <img src='/images/africa-map.png' alt='technology' />
             <div>
-              <div className='category'>Donation</div>
+              <div className='category'>Conference</div>
               <Link to='#!'>
                 <h3>Lorem ipsum dolor sit.</h3>
               </Link>
