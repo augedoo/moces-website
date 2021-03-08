@@ -1,99 +1,185 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Pagination from '../components/Pagination';
 
 const NewsScreen = () => {
   return (
-    <section id='screen-news' class='screen-news bg-light py-2'>
-      <div class='container'>
+    <section id='screen-news' className='screen-news bg-light py-2'>
+      <div className='container'>
         <h1>Recent News</h1>
 
-        <div class='articles-wrapper'>
-          <article class='card p-1'>
-            <img src='/images/orphans.jpg' alt='entertainment' />
-            <div>
-              <div class='category category-ent'>Entertainment</div>
-              <h3>Lorem ipsum dolor sit.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eius quia tempore nobis asperiores neque optio veritatis! Eaque
-                officiis accusantium accusamus, fugit quia non iste!
-              </p>
-            </div>
-          </article>
-
-          <article class='card p-1 bg-secondary'>
-            <div>
-              <div class='category category-sports'>Sports</div>
-              <h3>Lorem ipsum dolor sit.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eius quia tempore nobis asperiores neque optio veritatis! Eaque
-                officiis accusantium accusamus, fugit quia non iste!
-              </p>
-            </div>
-          </article>
-
-          <article class='card p-1'>
+        <div className='articles-wrapper'>
+          <article className='card'>
             <img src='/images/orphans.jpg' alt='technology' />
             <div>
-              <div class='category category-tech'>Technology</div>
-              <h3>Lorem ipsum dolor sit.</h3>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
                 eius quia tempore nobis asperiores neque optio veritatis! Eaque
                 officiis accusantium accusamus, fugit quia non iste!
               </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
             </div>
           </article>
-
-          <article class='card p-1'>
-            <img src='/images/orphans.jpg' alt='sports' />
-            <div>
-              <div class='category category-sports'>Sports</div>
-              <h3>Lorem ipsum dolor sit.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                eius quia tempore nobis asperiores neque optio veritatis! Eaque
-                officiis accusantium accusamus, fugit quia non iste!
-              </p>
-            </div>
-          </article>
-
-          <article class='card p-1'>
+          <article className='card'>
             <img src='/images/orphans.jpg' alt='technology' />
             <div>
-              <div class='category category-tech'>Technology</div>
-              <h3>Lorem ipsum dolor sit.</h3>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>
+                  Lorem ipsum dolor sit Lorem ipsum dolor sit Lorem ipsum dolor
+                  sit Lorem ipsum dolor sit.
+                </h3>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
                 eius quia tempore nobis asperiores neque optio veritatis! Eaque
                 officiis accusantium accusamus, fugit quia non iste!
               </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
             </div>
           </article>
-
-          <article class='card p-1 bg-primary'>
+          <article className='card'>
+            <img src='/images/doctor.jpg' alt='technology' />
             <div>
-              <div class='category category-sports'>Sports</div>
-              <h3>Lorem ipsum dolor sit.</h3>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
                 eius quia tempore nobis asperiores neque optio veritatis! Eaque
                 officiis accusantium accusamus, fugit quia non iste!
               </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
             </div>
           </article>
-
-          <article class='card p-1'>
-            <img src='/images/orphans.jpg' alt='entertainment' />
+          <article className='card'>
+            <img src='/images/world-map.png' alt='technology' />
             <div>
-              <div class='category category-ent'>Entertainment</div>
-              <h3>Lorem ipsum dolor sit.</h3>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
                 eius quia tempore nobis asperiores neque optio veritatis! Eaque
                 officiis accusantium accusamus, fugit quia non iste!
               </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
+            </div>
+          </article>
+          <article className='card'>
+            <img src='/images/orphans.jpg' alt='technology' />
+            <div>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                eius quia tempore nobis asperiores neque optio veritatis! Eaque
+                officiis accusantium accusamus, fugit quia non iste!
+              </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
+            </div>
+          </article>
+          <article className='card'>
+            <img src='/images/orphans.jpg' alt='technology' />
+            <div>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                eius quia tempore nobis asperiores neque optio veritatis! Eaque
+                officiis accusantium accusamus, fugit quia non iste!
+              </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
+            </div>
+          </article>
+          <article className='card'>
+            <img src='/images/orphans.jpg' alt='technology' />
+            <div>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                eius quia tempore nobis asperiores neque optio veritatis! Eaque
+                officiis accusantium accusamus, fugit quia non iste!
+              </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
+            </div>
+          </article>
+          <article className='card'>
+            <img src='/images/orphans.jpg' alt='technology' />
+            <div>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                eius quia tempore nobis asperiores neque optio veritatis! Eaque
+                officiis accusantium accusamus, fugit quia non iste!
+              </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
+            </div>
+          </article>
+          <article className='card'>
+            <img src='/images/africa-map.png' alt='technology' />
+            <div>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit.</h3>
+              </Link>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                eius quia tempore nobis asperiores neque optio veritatis! Eaque
+                officiis accusantium accusamus, fugit quia non iste!
+              </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
+            </div>
+          </article>
+          <article className='card'>
+            <img src='/images/orphans.jpg' alt='technology' />
+            <div>
+              <div className='category'>Donation</div>
+              <Link to='#!'>
+                <h3>Lorem ipsum dolor sit Lorem ipsum dolor sit.</h3>
+              </Link>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                eius quia tempore nobis asperiores neque optio veritatis! Eaque
+                officiis accusantium accusamus, fugit quia non iste!
+              </p>
+              <Link to='#!' className='continue-btn'>
+                Continue Reading <i className='fas fa-arrow-right'></i>
+              </Link>
             </div>
           </article>
         </div>
