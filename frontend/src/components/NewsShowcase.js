@@ -13,7 +13,12 @@ const NewsShowcase = ({ article }) => {
         <div className='bottom'>
           <h1>{article.title}</h1>
 
-          <Link to={`news/articles/${article._id}`}></Link>
+          <Link
+            to={`news/articles/${article._id}`}
+            className='btn btn-primary btn-medium'
+          >
+            Read More
+          </Link>
         </div>
       </div>
     </div>

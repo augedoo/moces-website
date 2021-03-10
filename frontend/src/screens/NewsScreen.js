@@ -16,9 +16,21 @@ const NewsScreen = () => {
       {articles && articles.length >= 1 && (
         <NewsShowcase article={articles[0]} />
       )}
-      <div className='container'>
-        <h1>Recent News</h1>
+      <div className='container articles-container'>
+        <div className='top-section'>
+          <h1>Recent News</h1>
+          <form className='search'>
+            <input
+              type='text'
+              placeholder='Search article'
+              className='form-input'
+            />
+          </form>
+        </div>
         <NewsArticles articles={articles} />
+      </div>
+
+      <div className='container'>
         <Pagination />
       </div>
     </section>

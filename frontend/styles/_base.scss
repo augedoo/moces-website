@@ -68,6 +68,17 @@ img {
   overflow: hidden;
 }
 
+.form-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid lighten($color: $dark, $amount: 50);
+  width: 100% !important;
+  outline: none;
+  border-radius: 3px;
+  background: white;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+}
+
 .lead {
   font-weight: 500;
   letter-spacing: 1.2px;
