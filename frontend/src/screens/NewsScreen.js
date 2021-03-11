@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Pagination from '../components/Pagination';
-import NewsArticles from '../components/NewsArticles';
 import newsArticles from '../newsArticles';
 import NewsShowcase from '../components/NewsShowcase';
+import ArticlesList from '../components/ArticlesList';
 
 const NewsScreen = () => {
   const [articles, setArticles] = useState();
@@ -27,7 +27,7 @@ const NewsScreen = () => {
             />
           </form>
         </div>
-        <NewsArticles articles={articles} />
+        <ArticlesList articles={articles} />
       </div>
 
       <div className='container'>

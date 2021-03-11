@@ -8,13 +8,12 @@ const NewsShowcase = ({ article }) => {
       style={{ backgroundImage: `url(${article.image})` }}
     >
       <div className='container'>
-        <div className='category'>{article.category}</div>
-
         <div className='bottom'>
+          <h3>Latest Article</h3>
           <h1>{article.title}</h1>
 
           <Link
-            to={`news/articles/${article._id}`}
+            to={`/news/articles/${article._id}`}
             className='btn btn-primary btn-medium'
           >
             Read More

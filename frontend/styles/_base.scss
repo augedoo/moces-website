@@ -49,6 +49,12 @@ a,
 button {
   cursor: pointer;
   text-decoration: none;
+  transition: 0.35s ease-in-out;
+  color: $dark;
+
+  &:hover {
+    color: $primary-color !important;
+  }
 }
 
 ul {
@@ -66,6 +72,17 @@ img {
   padding: 0 1rem;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.asBox {
+  padding: 30px;
+  margin-bottom: 1.875em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .form-input {

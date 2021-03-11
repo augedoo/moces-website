@@ -1,13 +1,13 @@
 import React from 'react';
-import Article from './Article';
+import ArticleItem from './ArticleItem';
 
-const NewArticles = ({ articles }) => {
+const ArticlesList = ({ articles }) => {
   console.log(articles);
   if (articles && articles.length > 0) {
     return (
       <div className='articles-wrapper'>
         {articles.map((article) => {
-          return <Article article={article} />;
+          return <ArticleItem key={article._id} article={article} />;
         })}
       </div>
     );
@@ -16,4 +16,4 @@ const NewArticles = ({ articles }) => {
   }
 };
 
-export default NewArticles;
+export default ArticlesList;

@@ -10,7 +10,7 @@ const newsArticles = [
   },
 
   {
-    _id: '5d713995b721c3bb38c1f5d1',
+    _id: '5d713995b721c3bb38c1f5d2',
     title: 'Free health screen for the elderly and sick',
     image: '/images/doctor.jpg',
     body:
@@ -28,7 +28,7 @@ const newsArticles = [
     date: '22-03-2021',
   },
   {
-    _id: '5d713995b721c3bb38c1f5d1',
+    _id: '5d713995b721c3bb38c1f5d4',
     title: 'Moces chairman helps an old woman',
     image: '/images/moces-chairman.jpg',
     body:
@@ -37,7 +37,7 @@ const newsArticles = [
     date: '22-04-2021',
   },
   {
-    _id: '5d713995b721c3bb38c1f5d1',
+    _id: '5d713995b721c3bb38c1f5d3',
     title: 'Free health screen for the elderly and sick',
     image: '/images/doctor.jpg',
     body:
@@ -47,7 +47,7 @@ const newsArticles = [
   },
 
   {
-    _id: '5d713995b721c3bb38c1f5d1',
+    _id: '5d713995b721c3bb38c1f5d5',
     title: 'Free health screen for the elderly and sick',
     image: '/images/doctor.jpg',
     body:
@@ -56,7 +56,7 @@ const newsArticles = [
     date: '22-04-2021',
   },
   {
-    _id: '5d713995b721c3bb38c1f5d1',
+    _id: '5d713995b721c3bb38c1f5d6',
     title: 'Moces recieves support from ECOWAS',
     image: '/images/africa-map.png',
     body:

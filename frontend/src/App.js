@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import NewsScreen from './screens/NewsScreen';
 import StatusBar from './components/StatusBar';
+import ArticleScreen from './screens/ArticleScreen';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Switch>
         <>
           <Route path='/' component={HomeScreen} exact />
-          <Route path='/news' component={NewsScreen} exact />
+          <Route path='/news/articles' component={NewsScreen} exact />
+          <Route path='/news/articles/:id' component={ArticleScreen} exact />
         </>
       </Switch>
       <Footer />

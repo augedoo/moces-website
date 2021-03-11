@@ -39,7 +39,7 @@ const Header = () => {
 
             <li>
               <Link
-                to='/news'
+                to='/news/articles'
                 className={currentPath === '/news' ? 'active' : ''}
               >
                 News

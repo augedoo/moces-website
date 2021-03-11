@@ -22,7 +22,12 @@ a {
 a,
 button {
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.35s ease-in-out;
+  color: #333; }
+  a:hover,
+  button:hover {
+    color: #f79930 !important; }
 
 ul {
   list-style: none; }
@@ -36,6 +41,16 @@ img {
   padding: 0 1rem;
   margin: 0 auto;
   overflow: hidden; }
+
+.asBox {
+  padding: 30px;
+  margin-bottom: 1.875em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
 
 .form-input {
   padding: 0.75rem 1rem;
@@ -235,7 +250,7 @@ img {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.5);
-      background: linear-gradient(to right, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0) 15%, rgba(24, 24, 24, 0) 30%, rgba(24, 24, 24, 0) 80%), linear-gradient(to bottom, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0) 40%, rgba(24, 24, 24, 0.8) 100%); }
+      background: linear-gradient(to right, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0) 15%, rgba(24, 24, 24, 0) 30%, rgba(24, 24, 24, 0) 80%), linear-gradient(to bottom, rgba(24, 24, 24, 0) 0%, rgba(24, 24, 24, 0.3) 40%, rgba(24, 24, 24, 0.6) 100%); }
     .screen-news .news-showcase .container {
       position: relative;
       padding-top: 2rem;
@@ -244,11 +259,8 @@ img {
       color: white; }
       .screen-news .news-showcase .container h1 {
         font-size: 3rem; }
-      .screen-news .news-showcase .container .category {
-        margin-top: 2rem;
-        font-size: 0.9rem;
-        display: inline-block;
-        display: none; }
+      .screen-news .news-showcase .container h3 {
+        margin-bottom: 1rem; }
       .screen-news .news-showcase .container a {
         margin-top: 1.5rem; }
       .screen-news .news-showcase .container div.bottom {
@@ -365,23 +377,104 @@ img {
             color: #8cb8d6; }
             .screen-news .articles-container .articles-wrapper article .content .continue-btn i {
               margin-left: 0.5rem; }
-  .screen-news #article article .caption {
-    background: #eeeeee;
-    padding: 0.5rem 0.5em;
-    margin: 0.5rem 0 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-  .screen-news #article .sidenav ul li a {
-    display: inline-block;
-    color: #333;
-    border-bottom: 1px dotted #555;
-    width: 100%;
-    padding: 0.5rem 0; }
-  .screen-news #article .sidenav ul li:last-child a {
-    border-bottom: none; }
-  .screen-news #article .sidenav ul li a:hover {
-    color: var(--primary-color); }
+  .screen-news .article-wrapper {
+    background: #fff !important; }
+    .screen-news .article-wrapper .caption {
+      position: relative;
+      z-index: 1;
+      padding: 3rem 0;
+      background: #eeeeee; }
+      .screen-news .article-wrapper .caption h1 {
+        font-size: 2.5rem;
+        color: #1a3649;
+        margin-bottom: 2rem; }
+      .screen-news .article-wrapper .caption .container {
+        padding: 0 2rem; }
+    .screen-news .article-wrapper .content {
+      position: relative;
+      margin-top: -2rem;
+      margin-bottom: 4rem;
+      z-index: 2; }
+      .screen-news .article-wrapper .content .container {
+        display: grid;
+        grid-template-columns: 3fr 1.25fr;
+        gap: 2rem; }
+    .screen-news .article-wrapper main {
+      position: relative;
+      background: #fff;
+      border-radius: 3px; }
+      .screen-news .article-wrapper main article {
+        border: solid 2px #e5e5e5;
+        color: #4d4d4d;
+        font-size: 1.2rem;
+        padding: 2rem 3rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+    .screen-news .article-wrapper aside {
+      margin-top: 2rem; }
+      .screen-news .article-wrapper aside .widget-categories {
+        background: #fff;
+        margin-top: 2rem;
+        padding: 30px;
+        overflow: hidden;
+        border: solid 1px #ccc;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); }
+        .screen-news .article-wrapper aside .widget-categories ul li {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 0.7rem 0; }
+          .screen-news .article-wrapper aside .widget-categories ul li a {
+            line-height: 1.35;
+            color: #333;
+            outline: none;
+            font-weight: 400;
+            position: relative;
+            transform-origin: 0 0;
+            transition: 300ms ease; }
+            .screen-news .article-wrapper aside .widget-categories ul li a::after {
+              content: '';
+              display: block;
+              width: 30px;
+              border-top: 1px solid #f79930;
+              position: absolute;
+              left: -60px;
+              top: 50%;
+              transform-origin: inherit;
+              transition: inherit; }
+            .screen-news .article-wrapper aside .widget-categories ul li a:hover {
+              padding-left: 10px;
+              color: #f79930; }
+              .screen-news .article-wrapper aside .widget-categories ul li a:hover::after {
+                left: -30px; }
+          .screen-news .article-wrapper aside .widget-categories ul li:last-child {
+            border-bottom: none; }
+      .screen-news .article-wrapper aside .widget-recent-post {
+        /* Right Content - Recent Article */ }
+        .screen-news .article-wrapper aside .widget-recent-post h3 {
+          margin-bottom: 1rem;
+          font-size: 1.3rem;
+          color: #1a3649; }
+        .screen-news .article-wrapper aside .widget-recent-post .item {
+          display: grid;
+          grid-template-columns: 65px 1fr;
+          gap: 0.75rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 1rem 0; }
+          .screen-news .article-wrapper aside .widget-recent-post .item:last-child {
+            border-bottom: none; }
+          .screen-news .article-wrapper aside .widget-recent-post .item img {
+            width: 100%;
+            height: 65px;
+            margin-right: 1.2rem; }
+          .screen-news .article-wrapper aside .widget-recent-post .item h4 {
+            color: inherit;
+            font-size: 0.85rem;
+            line-height: 1.4; }
+          .screen-news .article-wrapper aside .widget-recent-post .item .date {
+            display: flex;
+            font-size: 0.85rem;
+            color: #595959;
+            margin-bottom: 0.25rem; }
+            .screen-news .article-wrapper aside .widget-recent-post .item .date i {
+              margin-right: 0.5rem; }
 
 .main-header {
   position: sticky;
