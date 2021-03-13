@@ -23,43 +23,43 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to='/' className={currentPath === '/' ? 'active' : ''}>
+              <a href='/' className={currentPath === '/' ? 'active' : ''}>
                 Home
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link
-                to='/projects'
+              <a
+                href='/projects'
                 className={currentPath === '/projects' ? 'active' : ''}
               >
                 Projects
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link
-                to='/news/articles'
-                className={currentPath === '/news' ? 'active' : ''}
+              <a
+                href='/news/articles'
+                className={currentPath === '/news/articles' ? 'active' : ''}
               >
                 News
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link
-                to='/about'
+              <a
+                href='/about'
                 className={currentPath === '/about' ? 'active' : ''}
               >
                 About
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
         {/* <ul className='auth-links'>
           <li>
             <Link
-              to='/login'
+              href='/login'
               className={`${
                 currentPath === '/login' ? 'active' : ''
               } login-btn btn btn-medium`}
@@ -69,7 +69,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to='/signup'
+              href='/signup'
               className={`${
                 currentPath === '/signup' ? 'active' : ''
               } signup-btn btn btn-medium btn-dark`}

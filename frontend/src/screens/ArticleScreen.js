@@ -53,6 +53,10 @@ const ArticleScreen = ({ match }) => {
             </main>
             <aside>
               <div className='asBox widget-categories'>
+                <h3>
+                  <span>Categories</span>
+                </h3>
+
                 <ul>
                   <li>
                     <a href='/news/articles/categories/political'>Events</a>

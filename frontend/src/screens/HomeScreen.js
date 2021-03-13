@@ -1,4 +1,5 @@
 import React from 'react';
+import VolunteerSection from '../components/VolunteerSection';
 
 const HomeScreen = () => {
   return (
@@ -41,6 +42,8 @@ const HomeScreen = () => {
           </div>
         </div>
       </section>
+
+      <VolunteerSection />
     </div>
   );
 };

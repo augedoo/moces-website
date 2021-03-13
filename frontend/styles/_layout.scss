@@ -157,7 +157,7 @@
 
     .articles-container {
       background: #fff;
-      border-radius: 10px;
+      border-radius: 5px;
       margin-top: -4rem;
       padding: 2rem;
       position: relative;
@@ -180,7 +180,6 @@
         gap: 1.5rem;
 
         article {
-          border-radius: 5px;
           overflow: hidden;
 
           &.card {
@@ -405,6 +404,12 @@
           border: solid 1px $medium;
           box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 
+          h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            color: $secondary-color;
+          }
+
           ul li {
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             padding: 0.7rem 0;
@@ -464,10 +469,22 @@
               border-bottom: none;
             }
 
-            img {
-              width: 100%;
-              height: 65px;
-              margin-right: 1.2rem;
+            & > a {
+              overflow: hidden;
+
+              img {
+                width: 100%;
+                height: 65px;
+                margin-right: 1.2rem;
+                transition: 0.35s ease-in-out;
+                object-fit: cover;
+              }
+
+              &:hover {
+                img {
+                  transform: scale(1.25);
+                }
+              }
             }
 
             h4 {
@@ -484,6 +501,10 @@
 
               i {
                 margin-right: 0.5rem;
+              }
+
+              & + a:hover {
+                color: $primary-color;
               }
             }
           }
