@@ -4,68 +4,63 @@
 
     #showcase,
     .showcase {
+      position: relative;
       height: 85vh;
       padding: 2rem;
       margin-bottom: 2rem;
+      margin: 1rem;
+      background-size: cover;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center 70%;
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: 0.35);
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.35) 20%,
+          rgba(28, 56, 74, 0.1) 100%
+        );
+        z-index: 1;
+      }
 
       .container {
+        position: relative;
+        z-index: 2;
         height: 100%;
-        display: grid;
-        grid-template-columns: 500px 1fr;
-        gap: 3rem;
+        display: flex;
         align-items: center;
         justify-content: center;
       }
 
-      .slides {
-        height: 90%;
-        border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-        // box-shadow: -8px -4px 8px 0px #ffffff, 8px 4px 12px 0px #d1d9e6,
-        //   4px 4px 4px 0px #d1d9e6 inset, -4px -4px 4px 0px #ffffff inset;
-
-        img {
-          height: 100%;
-          width: 100%;
-        }
-
-        .overlay {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 90%;
-          height: 90%;
-          border-radius: 10px;
-          background: rgba(0, 0, 0, 0.2);
-          transform: translate(-50%, -50%);
-        }
-
-        .play-btn {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 70px;
-          height: 70px;
-          z-index: 2;
-
-          svg {
-            fill: $primary-color;
-          }
-        }
-      }
-
       &__info {
+        max-width: 900px;
+        text-align: center;
+
         h1 {
           letter-spacing: 1.5px;
-          color: $dark;
-          // text-transform: uppercase;
+          color: $light;
           font-weight: 800;
-          font-size: 3rem;
-          font-family: 'Lato', sans-serif;
-          font-family: 'Merriweather', serif;
+          font-size: 2.5rem;
+          font-family: 'Roboto Slab', serif;
+          font-family: 'Montserrat', serif;
+
           padding: 1rem 0;
+        }
+
+        .lead {
+          width: 90%;
+          margin: auto;
+          text-align: center;
+          color: $light;
+          font-weight: 500;
+          letter-spacing: 1px;
         }
 
         .icon {
@@ -90,6 +85,96 @@
           }
         }
       }
+    }
+
+    .projects {
+      padding: 4rem 0;
+      background: $secondary-dark-color;
+      color: $light;
+      text-align: center;
+
+      .section-title {
+        text-transform: uppercase;
+        font-size: .85rem;
+        letter-spacing: 1.2px;
+        font-weight: 600;
+        color: $primary-color;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1.2px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+
+      }
+
+      .items {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+
+
+
+        .item {
+          text-align: left;
+          padding: 2rem 2.5rem;
+          background: linear-gradient(180deg, #163041 10%, rgba(54, 54, 54, 0) 41.19%), linear-gradient(0deg, $secondary-dark-color 0%, $secondary-color) 0%;
+          border-radius: 10px;
+          box-shadow: 2px 20px 30px -15px  rgba(11, 26, 36, 0.8);
+
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+
+          p {
+            line-height: 1.5;
+            font-size: 1.2rem;
+            font-weight: 300;
+            padding: 1rem 0;
+            color: darken($color: $light, $amount: 20)
+
+          }
+
+          a {
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $light;
+            font-size: .8rem;
+            letter-spacing: 1.1px;
+            display: flex;
+            align-items: center;
+
+
+            i {
+              margin-left: .5rem;
+              color: $primary-color
+              
+            }
+
+            &:hover{
+              color: $primary-color;
+              
+            }
+          }
+        }
+
+        & + div  {
+          padding: 1rem;
+          
+      
+
+        }
+        
+      }
+
+      
     }
   }
 
