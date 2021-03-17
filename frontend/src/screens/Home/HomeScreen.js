@@ -10,7 +10,6 @@ const HomeScreen = () => {
       <Showcase />
       <ProjectsSection />
       <GetInvolvedSection />
-
       <VolunteerSection />
     </div>
   );

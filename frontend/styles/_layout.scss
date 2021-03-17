@@ -4,88 +4,94 @@
 
     #showcase,
     .showcase {
-      position: relative;
-      height: 85vh;
-      padding: 2rem;
       margin-bottom: 2rem;
-      margin: 1rem;
-      background-size: cover;
-      object-fit: cover;
-      background-repeat: no-repeat;
-      background-position: center 70%;
-
-      &::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba($color: #000000, $alpha: 0.35);
-        background: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.35) 20%,
-          rgba(28, 56, 74, 0.1) 100%
-        );
-        z-index: 1;
-      }
-
-      .container {
+      
+      &-wrapper {
         position: relative;
-        z-index: 2;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+        height: 80vh;
+        width: 100%;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        margin: 1rem;
+        background-size: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center 70%;     
+        overflow: hidden;
 
-      &__info {
-        max-width: 900px;
-        text-align: center;
-
-        h1 {
-          letter-spacing: 1.5px;
-          color: $light;
-          font-weight: 800;
-          font-size: 2.5rem;
-          font-family: 'Roboto Slab', serif;
-          font-family: 'Montserrat', serif;
-
-          padding: 1rem 0;
+        &::before {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: rgba($color: #000000, $alpha: 0.35);
+          background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.35) 20%,
+            rgba(28, 56, 74, 0.1) 100%
+          );
+          z-index: 1;
         }
 
-        .lead {
-          width: 90%;
-          margin: auto;
+        .container {
+          position: relative;
+          z-index: 2;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .showcase__info {
+          max-width: 900px;
           text-align: center;
-          color: $light;
-          font-weight: 500;
-          letter-spacing: 1px;
-        }
 
-        .icon {
-          background: $primary-color;
-          display: inline-block;
-          padding: 1rem;
-          border-radius: 50%;
-          margin-top: 1rem;
+          h1 {
+            letter-spacing: 1.5px;
+            color: $light;
+            font-weight: 800;
+            font-size: 2.5rem;
+            font-family: 'Roboto Slab', serif;
+            font-family: 'Montserrat', serif;
 
-          svg {
-            width: 2.15rem;
-            height: 2rem;
-            fill: $light;
+            padding: 1rem 0;
+          }
+
+          .lead {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            color: $light;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+
+          .icon {
+            background: $primary-color;
+            display: inline-block;
+            padding: 1rem;
+            border-radius: 50%;
+            margin-top: 1rem;
+
+            svg {
+              width: 2.15rem;
+              height: 2rem;
+              fill: $light;
+            }
+          }
+
+          .cta {
+            padding: 2rem 0;
+
+            a {
+              margin-right: 1rem;
+            }
           }
         }
-
-        .cta {
-          padding: 2rem 0;
-
-          a {
-            margin-right: 1rem;
-          }
-        }
-      }
     }
+  }
 
     #projects,
     .projects {

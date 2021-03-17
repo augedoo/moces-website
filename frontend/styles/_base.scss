@@ -168,6 +168,35 @@ img {
   background: $medium;
 }
 
+  // React Elastic Carousel
+  .rec  {
+  
+    &-slider-container {
+      &.cukhLH {
+        margin: 0;
+      }
+    }
+    
+    &-pagination  {
+      margin-top: -10px;
+  
+      &.bkVSTc {
+        margin-top: 0px;
+      }
+      
+      button.rec-dot {
+        background: $secondary-color;
+        
+        &_active {
+          background-color: $secondary-color ;
+          box-shadow: 0 0 1px 3px $primary-color;
+        }
+      }
+  
+      
+    }
+  }
+
 .py {
   &-0 {
     padding: 0.5rem 0;

@@ -118,6 +118,19 @@ img {
   display: inline-block;
   background: #ccc; }
 
+.rec-slider-container.cukhLH {
+  margin: 0; }
+
+.rec-pagination {
+  margin-top: -10px; }
+  .rec-pagination.bkVSTc {
+    margin-top: 0px; }
+  .rec-pagination button.rec-dot {
+    background: #1a3649; }
+    .rec-pagination button.rec-dot_active {
+      background-color: #1a3649;
+      box-shadow: 0 0 1px 3px #f79930; }
+
 .py-0 {
   padding: 0.5rem 0; }
 
@@ -211,73 +224,78 @@ img {
   min-height: 80vh; }
   .screen-home #showcase,
   .screen-home .showcase {
-    position: relative;
-    height: 85vh;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    margin: 1rem;
-    background-size: cover;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-position: center 70%; }
-    .screen-home #showcase::before,
-    .screen-home .showcase::before {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.35);
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.35) 20%, rgba(28, 56, 74, 0.1) 100%);
-      z-index: 1; }
-    .screen-home #showcase .container,
-    .screen-home .showcase .container {
+    margin-bottom: 2rem; }
+    .screen-home #showcase-wrapper,
+    .screen-home .showcase-wrapper {
       position: relative;
-      z-index: 2;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .screen-home #showcase__info,
-    .screen-home .showcase__info {
-      max-width: 900px;
-      text-align: center; }
-      .screen-home #showcase__info h1,
-      .screen-home .showcase__info h1 {
-        letter-spacing: 1.5px;
-        color: #f4f4f4;
-        font-weight: 800;
-        font-size: 2.5rem;
-        font-family: 'Roboto Slab', serif;
-        font-family: 'Montserrat', serif;
-        padding: 1rem 0; }
-      .screen-home #showcase__info .lead,
-      .screen-home .showcase__info .lead {
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        color: #f4f4f4;
-        font-weight: 500;
-        letter-spacing: 1px; }
-      .screen-home #showcase__info .icon,
-      .screen-home .showcase__info .icon {
-        background: #f79930;
-        display: inline-block;
-        padding: 1rem;
-        border-radius: 50%;
-        margin-top: 1rem; }
-        .screen-home #showcase__info .icon svg,
-        .screen-home .showcase__info .icon svg {
-          width: 2.15rem;
-          height: 2rem;
-          fill: #f4f4f4; }
-      .screen-home #showcase__info .cta,
-      .screen-home .showcase__info .cta {
-        padding: 2rem 0; }
-        .screen-home #showcase__info .cta a,
-        .screen-home .showcase__info .cta a {
-          margin-right: 1rem; }
+      height: 80vh;
+      width: 100%;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      margin: 1rem;
+      background-size: cover;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center 70%;
+      overflow: hidden; }
+      .screen-home #showcase-wrapper::before,
+      .screen-home .showcase-wrapper::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.35);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.35) 20%, rgba(28, 56, 74, 0.1) 100%);
+        z-index: 1; }
+      .screen-home #showcase-wrapper .container,
+      .screen-home .showcase-wrapper .container {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .screen-home #showcase-wrapper .showcase__info,
+      .screen-home .showcase-wrapper .showcase__info {
+        max-width: 900px;
+        text-align: center; }
+        .screen-home #showcase-wrapper .showcase__info h1,
+        .screen-home .showcase-wrapper .showcase__info h1 {
+          letter-spacing: 1.5px;
+          color: #f4f4f4;
+          font-weight: 800;
+          font-size: 2.5rem;
+          font-family: 'Roboto Slab', serif;
+          font-family: 'Montserrat', serif;
+          padding: 1rem 0; }
+        .screen-home #showcase-wrapper .showcase__info .lead,
+        .screen-home .showcase-wrapper .showcase__info .lead {
+          width: 90%;
+          margin: auto;
+          text-align: center;
+          color: #f4f4f4;
+          font-weight: 500;
+          letter-spacing: 1px; }
+        .screen-home #showcase-wrapper .showcase__info .icon,
+        .screen-home .showcase-wrapper .showcase__info .icon {
+          background: #f79930;
+          display: inline-block;
+          padding: 1rem;
+          border-radius: 50%;
+          margin-top: 1rem; }
+          .screen-home #showcase-wrapper .showcase__info .icon svg,
+          .screen-home .showcase-wrapper .showcase__info .icon svg {
+            width: 2.15rem;
+            height: 2rem;
+            fill: #f4f4f4; }
+        .screen-home #showcase-wrapper .showcase__info .cta,
+        .screen-home .showcase-wrapper .showcase__info .cta {
+          padding: 2rem 0; }
+          .screen-home #showcase-wrapper .showcase__info .cta a,
+          .screen-home .showcase-wrapper .showcase__info .cta a {
+            margin-right: 1rem; }
   .screen-home #projects,
   .screen-home .projects {
     padding: 4rem 0;
