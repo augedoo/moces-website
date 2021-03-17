@@ -14,11 +14,10 @@ const GetInvolvedSection = () => {
             </div>
             <h3>Voluntary Support</h3>
             <p>
-              Invest in your team’s professional development by giving them the
-              tools they need to strengthen their skills. By providing access to
-              Pluralsight, you help develop critical skills with courses and
-              content that improve organizational efficiency and help you
-              deliver on your mission.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              mollitia hic iste repudiandae fugiat, incidunt natus ipsa?
+              Molestiae beatae, aliquid possimus blanditiis necessitatibus,
+              alias iusto vitae architecto veniam placeat illo.
             </p>
             <a href='#!' className='btn btn-primary-outlined'>
               Become a volunteer
@@ -26,15 +25,14 @@ const GetInvolvedSection = () => {
           </div>
           <div className='item'>
             <div className='icon'>
-              <i className='fas fa-hand-paper'></i>
+              <i className='fas fa-handshake'></i>
             </div>
             <h3>Sponsorship Support</h3>
             <p>
-              Invest in your team’s professional development by giving them the
-              tools they need to strengthen their skills. By providing access to
-              Pluralsight, you help develop critical skills with courses and
-              content that improve organizational efficiency and help you
-              deliver on your mission.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              mollitia hic iste repudiandae fugiat, incidunt natus ipsa?
+              Molestiae beatae, aliquid possimus blanditiis necessitatibus,
+              alias iusto vitae architecto veniam placeat illo.
             </p>
             <a href='#!' className='btn btn-primary-outlined'>
               Give Us Sponsorship
@@ -42,15 +40,14 @@ const GetInvolvedSection = () => {
           </div>
           <div className='item'>
             <div className='icon'>
-              <i className='fas fa-hand-paper'></i>
+              <i className='fas fa-people-carry'></i>
             </div>
             <h3>Start Foundation</h3>
             <p>
-              Invest in your team’s professional development by giving them the
-              tools they need to strengthen their skills. By providing access to
-              Pluralsight, you help develop critical skills with courses and
-              content that improve organizational efficiency and help you
-              deliver on your mission.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              mollitia hic iste repudiandae fugiat, incidunt natus ipsa?
+              Molestiae beatae, aliquid possimus blanditiis necessitatibus,
+              alias iusto vitae architecto veniam placeat illo.
             </p>
             <a href='#!' className='btn btn-primary-outlined'>
               Build a Foundation
