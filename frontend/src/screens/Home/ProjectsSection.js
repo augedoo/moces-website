@@ -2,10 +2,10 @@ import React from 'react';
 
 const ProjectsSection = () => {
   return (
-    <section className='projects'>
+    <section id='projects' className='projects'>
       <div className='container'>
         <h1 className='section-title'>Explore our projections</h1>
-        <h2>Our current projections</h2>
+        <h2 className='section-subtitle'>Our current projections</h2>
         <div className='items'>
           <div className='item'>
             <h3>Farming with the elderly</h3>

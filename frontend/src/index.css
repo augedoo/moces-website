@@ -38,6 +38,22 @@ img {
   margin: 0 auto;
   overflow: hidden; }
 
+.section-title {
+  text-transform: uppercase;
+  font-size: .85rem;
+  letter-spacing: 1.2px;
+  color: #f79930;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.section-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize; }
+
 .asBox {
   padding: 30px;
   margin-bottom: 1.875em;
@@ -112,6 +128,9 @@ img {
   padding: 2rem 0; }
 
 .py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
   padding: 3rem 0; }
 
 .btn {
@@ -259,45 +278,40 @@ img {
         .screen-home #showcase__info .cta a,
         .screen-home .showcase__info .cta a {
           margin-right: 1rem; }
+  .screen-home #projects,
   .screen-home .projects {
     padding: 4rem 0;
     background: #122838;
     color: #f4f4f4;
     text-align: center; }
+    .screen-home #projects .section-title,
     .screen-home .projects .section-title {
-      text-transform: uppercase;
-      font-size: .85rem;
-      letter-spacing: 1.2px;
-      font-weight: 600;
-      color: #f79930;
-      margin-bottom: 1rem;
-      text-align: center; }
-    .screen-home .projects h2 {
-      font-size: 1.5rem;
-      letter-spacing: 1.2px;
-      font-weight: 700;
-      text-align: center;
-      text-transform: capitalize; }
+      color: #f79930; }
+    .screen-home #projects .items,
     .screen-home .projects .items {
       margin: 2rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem; }
+      .screen-home #projects .items .item,
       .screen-home .projects .items .item {
         text-align: left;
         padding: 2rem 2.5rem;
         background: linear-gradient(180deg, #163041 10%, rgba(54, 54, 54, 0) 41.19%), linear-gradient(0deg, #122838 0%, #1a3649) 0%;
         border-radius: 10px;
         box-shadow: 2px 20px 30px -15px rgba(11, 26, 36, 0.8); }
+        .screen-home #projects .items .item h3,
         .screen-home .projects .items .item h3 {
           font-size: 1.5rem;
           font-weight: 500; }
+        .screen-home #projects .items .item p,
         .screen-home .projects .items .item p {
           line-height: 1.5;
           font-size: 1.2rem;
           font-weight: 300;
           padding: 1rem 0;
           color: #c1c1c1; }
+        .screen-home #projects .items .item a,
         .screen-home .projects .items .item a {
           font-weight: 500;
           text-transform: uppercase;
@@ -306,13 +320,93 @@ img {
           letter-spacing: 1.1px;
           display: flex;
           align-items: center; }
+          .screen-home #projects .items .item a i,
           .screen-home .projects .items .item a i {
             margin-left: .5rem;
             color: #f79930; }
+          .screen-home #projects .items .item a:hover,
           .screen-home .projects .items .item a:hover {
             color: #f79930; }
+      .screen-home #projects .items + div,
       .screen-home .projects .items + div {
         padding: 1rem; }
+  .screen-home #get-involved,
+  .screen-home .get-involved {
+    padding: 4rem 0; }
+    .screen-home #get-involved .items,
+    .screen-home .get-involved .items {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem; }
+      .screen-home #get-involved .items .item,
+      .screen-home .get-involved .items .item {
+        text-align: left;
+        padding: 2rem 2rem;
+        border-radius: 10px;
+        overflow: visible;
+        text-align: center;
+        transition: .5s; }
+        .screen-home #get-involved .items .item .icon,
+        .screen-home .get-involved .items .item .icon {
+          position: relative;
+          background: #f79930;
+          width: 70px;
+          height: 70px;
+          margin: auto;
+          margin-top: -60px;
+          margin-bottom: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          border-radius: 50%;
+          color: #f4f4f4; }
+          .screen-home #get-involved .items .item .icon::before,
+          .screen-home .get-involved .items .item .icon::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            z-index: 1;
+            background: none;
+            border: 3px solid #f4f4f4; }
+          .screen-home #get-involved .items .item .icon i,
+          .screen-home .get-involved .items .item .icon i {
+            position: relative;
+            z-index: 2; }
+        .screen-home #get-involved .items .item h3,
+        .screen-home .get-involved .items .item h3 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #1a3649; }
+        .screen-home #get-involved .items .item p,
+        .screen-home .get-involved .items .item p {
+          line-height: 1.4;
+          font-size: 1.2rem;
+          font-weight: 400;
+          padding: 1rem 0 2rem;
+          color: #8e8e8e; }
+        .screen-home #get-involved .items .item a,
+        .screen-home .get-involved .items .item a {
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: .8rem;
+          letter-spacing: 1.1px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .screen-home #get-involved .items .item a:hover,
+          .screen-home .get-involved .items .item a:hover {
+            color: #1a3649; }
+        .screen-home #get-involved .items .item:hover,
+        .screen-home .get-involved .items .item:hover {
+          background: linear-gradient(180deg, #f4f4f4 10%, #f4f4f4 41.19%), linear-gradient(0deg, #122838 0%, #1a3649) 0%;
+          box-shadow: 2px 20px 30px -15px rgba(11, 26, 36, 0.8); }
 
 .screen-news {
   background: #edf2f9; }

@@ -87,6 +87,7 @@
       }
     }
 
+    #projects,
     .projects {
       padding: 4rem 0;
       background: $secondary-dark-color;
@@ -94,32 +95,15 @@
       text-align: center;
 
       .section-title {
-        text-transform: uppercase;
-        font-size: .85rem;
-        letter-spacing: 1.2px;
-        font-weight: 600;
         color: $primary-color;
-        margin-bottom: 1rem;
-        text-align: center;
       }
 
-      h2 {
-        font-size: 1.5rem;
-        letter-spacing: 1.2px;
-        font-weight: 700;
-        text-align: center;
-        text-transform: capitalize;
-
-      }
 
       .items {
         margin: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
-
-
-
 
         .item {
           text-align: left;
@@ -139,7 +123,6 @@
             font-weight: 300;
             padding: 1rem 0;
             color: darken($color: $light, $amount: 20)
-
           }
 
           a {
@@ -175,6 +158,101 @@
       }
 
       
+    }
+
+    #get-involved,
+    .get-involved {
+      padding: 4rem 0;
+
+      .section-title {
+        // color: $secondary-color;
+      }
+
+      .items {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        .item {
+          text-align: left;
+          padding: 2rem 2rem;
+          border-radius: 10px;
+          overflow: visible;
+          text-align: center;
+          transition: .5s;
+
+          .icon {
+            position: relative;
+            background: $primary-color;
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            margin-top: -60px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border-radius: 50%;
+            color: $light;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 5px;
+              left: 5px;
+              width: 54px;
+              height:54px;
+              border-radius: 50%;
+              z-index: 1;
+              background: none;
+              border: 3px solid $light;
+            }
+
+            i {
+              position: relative;
+              z-index: 2;
+            }
+          }
+
+          h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $secondary-color;
+          }
+
+          p {
+            line-height: 1.4;
+            font-size: 1.2rem;
+            font-weight: 400;
+            padding: 1rem 0 2rem;
+            color: darken($color: $light, $amount:40)
+          }
+
+          a {
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: .8rem;
+            letter-spacing: 1.1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+            &:hover{
+              color: $secondary-color;
+            }
+          }
+
+          &:hover {
+            background: linear-gradient(180deg, $light 10%, $light 41.19%), linear-gradient(0deg, $secondary-dark-color 0%, $secondary-color) 0%;
+            box-shadow: 2px 20px 30px -15px  rgba(11, 26, 36, 0.8);
+          }
+        }
+      }
     }
   }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomeScreen from './screens/HomeScreen';
+import HomeScreen from './screens/Home/HomeScreen';
 import NewsScreen from './screens/NewsScreen';
 import StatusBar from './components/StatusBar';
 import ArticleScreen from './screens/ArticleScreen';

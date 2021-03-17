@@ -71,6 +71,25 @@ img {
   overflow: hidden;
 }
 
+.section-title {
+  text-transform: uppercase;
+  font-size: .85rem;
+  letter-spacing: 1.2px;
+  color: $primary-color;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+
 .asBox {
   padding: 30px;
   margin-bottom: 1.875em;
@@ -162,6 +181,10 @@ img {
   }
 
   &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
     padding: 3rem 0;
   }
 }
