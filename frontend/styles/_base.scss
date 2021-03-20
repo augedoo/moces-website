@@ -170,26 +170,36 @@ img {
 
   // React Elastic Carousel
   .rec  {
-  
-    &-slider-container {
-      &.cukhLH {
-        margin: 0;
-      }
+&-carousel {
+  position: relative;
+  z-index: 1;
+}    
+&-slider-container {
+  &.cukhLH {
+    margin: 0;
+  }
     }
     
     &-pagination  {
-      margin-top: -10px;
-  
+      position: relative;
+      top: -60px;
+      margin-top: 0;
+      z-index: 2;
+      
       &.bkVSTc {
         margin-top: 0px;
       }
       
       button.rec-dot {
+        margin-right: .35rem;
+        width: 15px;
+        height: 15px;
         background: $secondary-color;
+        box-shadow: 0 0 1px 2px $medium;
         
         &_active {
           background-color: $secondary-color ;
-          box-shadow: 0 0 1px 3px $primary-color;
+          box-shadow: 0 0 2px 4px $primary-color;
         }
       }
   
