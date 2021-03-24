@@ -4,8 +4,6 @@
 
     #showcase,
     .showcase {
-      // margin-bottom: 2rem;
-      
       &-wrapper {
         position: relative;
         height: 85vh;
@@ -16,7 +14,7 @@
         background-size: cover;
         object-fit: cover;
         background-repeat: no-repeat;
-        background-position: center 70%;     
+        background-position: center 70%;
         overflow: hidden;
 
         &::before {
@@ -90,12 +88,48 @@
             }
           }
         }
+      }
     }
+
+    #about-news.about-news {
+      .container {
+        display: grid;
+        grid-template-columns:
+          2fr
+          1fr;
+        gap: 3rem;
+        margin: auto;
+        padding: 2rem 0;
+      }
     }
 
     #about,
     .about {
+      .section {
+        &-title,
+        &-subtitle {
+          text-align: left;
+        }
+      }
 
+      .info {
+        p {
+          padding: 2rem 0;
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    #news,
+    .news {
+      .list-heading {
+        padding: 1rem 1.5rem;
+        font-weight: 600;
+        color: $light;
+        font-size: 1.2rem;
+        background: $secondary-color;
+      }
     }
 
     #projects,
@@ -109,7 +143,6 @@
         color: $primary-color;
       }
 
-
       .items {
         margin: 2rem;
         display: grid;
@@ -119,9 +152,14 @@
         .item {
           text-align: left;
           padding: 2rem 2.5rem;
-          background: linear-gradient(180deg, #163041 10%, rgba(54, 54, 54, 0) 41.19%), linear-gradient(0deg, $secondary-dark-color 0%, $secondary-color) 0%;
+          background: linear-gradient(
+              180deg,
+              #163041 10%,
+              rgba(54, 54, 54, 0) 41.19%
+            ),
+            linear-gradient(0deg, $secondary-dark-color 0%, $secondary-color) 0%;
           border-radius: 10px;
-          box-shadow: 2px 20px 30px -15px  rgba(11, 26, 36, 0.8);
+          box-shadow: 2px 20px 30px -15px rgba(11, 26, 36, 0.8);
 
           h3 {
             font-size: 1.5rem;
@@ -133,42 +171,33 @@
             font-size: 1.2rem;
             font-weight: 300;
             padding: 1rem 0;
-            color: darken($color: $light, $amount: 20)
+            color: darken($color: $light, $amount: 20);
           }
 
           a {
             font-weight: 500;
             text-transform: uppercase;
             color: $light;
-            font-size: .8rem;
+            font-size: 0.8rem;
             letter-spacing: 1.1px;
             display: flex;
             align-items: center;
 
-
             i {
-              margin-left: .5rem;
-              color: $primary-color
-              
+              margin-left: 0.5rem;
+              color: $primary-color;
             }
 
-            &:hover{
+            &:hover {
               color: $primary-color;
-              
             }
           }
         }
 
-        & + div  {
+        & + div {
           padding: 1rem;
-          
-      
-
         }
-        
       }
-
-      
     }
 
     #get-involved,
@@ -187,7 +216,7 @@
           border-radius: 10px;
           overflow: visible;
           text-align: center;
-          transition: .5s;
+          transition: 0.5s;
 
           .icon {
             position: relative;
@@ -210,7 +239,7 @@
               top: 5px;
               left: 5px;
               width: 54px;
-              height:54px;
+              height: 54px;
               border-radius: 50%;
               z-index: 1;
               background: none;
@@ -235,87 +264,85 @@
             font-size: 1.2rem;
             font-weight: 400;
             padding: 1rem 0 2rem;
-            color: darken($color: $light, $amount:40)
+            color: darken($color: $light, $amount: 40);
           }
 
           a {
             font-weight: 500;
             text-transform: uppercase;
-            font-size: .8rem;
+            font-size: 0.8rem;
             letter-spacing: 1.1px;
             display: flex;
             align-items: center;
             justify-content: center;
 
-
-
-            &:hover{
+            &:hover {
               color: $secondary-color;
             }
           }
 
           &:hover {
-            background: linear-gradient(180deg, $light 10%, $light 41.19%), linear-gradient(0deg, $secondary-dark-color 0%, $secondary-color) 0%;
-            box-shadow: 2px 20px 30px -15px  rgba(11, 26, 36, 0.8);
+            background: linear-gradient(180deg, $light 10%, $light 41.19%),
+              linear-gradient(0deg, $secondary-dark-color 0%, $secondary-color)
+                0%;
+            box-shadow: 2px 20px 30px -15px rgba(11, 26, 36, 0.8);
           }
         }
       }
     }
 
-    #help-us, 
+    #help-us,
     .help-us {
+      position: relative;
+      background-color: $primary-color;
+      height: 200px;
 
+      .container {
         position: relative;
-        background-color: $primary-color;
-        height: 200px;
-      
-        .container {
-          position: relative;
-          z-index: 1;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          color: $light;
-          background-position: 50% 50%;
-      
-          h1 {
-            font-size: 2rem;
-            text-transform: uppercase;
-            color: $secondary-color;
-          }
-      
-          .lead {
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            color: $secondary-color;
-            font-weight: bold;
-          }
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $light;
+        background-position: 50% 50%;
+
+        h1 {
+          font-size: 2rem;
+          text-transform: uppercase;
+          color: $secondary-color;
         }
-      
-        &::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
-          background: linear-gradient(
-              to right,
-              rgba(247, 153, 44, 0.8) 0%,
-              rgba(247, 153, 48, 0.5) 15%,
-              rgba(247, 153, 48, 0.3) 30%,
-              rgba(247, 153, 48, 0.8) 80%
-            ),
-            linear-gradient(
-              to bottom,
-              rgba(247, 153, 48, 0) 0%,
-              rgba(247, 153, 48, 0) 40%,
-              rgba(247, 153, 48, 0.8) 100%
-            );
-          // background: transparentize($color: $primary-color, $amount: 0.7);
+
+        .lead {
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+          color: $secondary-color;
+          font-weight: bold;
         }
-      
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(
+            to right,
+            rgba(247, 153, 44, 0.8) 0%,
+            rgba(247, 153, 48, 0.5) 15%,
+            rgba(247, 153, 48, 0.3) 30%,
+            rgba(247, 153, 48, 0.8) 80%
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(247, 153, 48, 0) 0%,
+            rgba(247, 153, 48, 0) 40%,
+            rgba(247, 153, 48, 0.8) 100%
+          );
+        // background: transparentize($color: $primary-color, $amount: 0.7);
+      }
     }
   }
 

@@ -5,17 +5,23 @@ import GetInvolvedSection from './GetInvolvedSection';
 import Showcase from './Showcase';
 import AboutSection from './AboutSection';
 import HelpUsSection from './HelpUsSection';
+import NewsSection from './NewsSection';
 
 const HomeScreen = () => {
   return (
-    <div className='screen-home'>
+    <main className='screen-home'>
       <Showcase />
-      <AboutSection />
+      <div id='about-news' className=' about-news'>
+        <div className='container'>
+          <AboutSection />
+          <NewsSection />
+        </div>
+      </div>
       <VolunteerSection />
       <ProjectsSection />
       <GetInvolvedSection />
       <HelpUsSection />
-    </div>
+    </main>
   );
 };
 

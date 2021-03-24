@@ -38,9 +38,23 @@ img {
   margin: 0 auto;
   overflow: hidden; }
 
+.line-clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.25s; }
+  .line-clamped-3 {
+    -webkit-line-clamp: 3; }
+  .line-clamped-4 {
+    -webkit-line-clamp: 4; }
+  .line-clamped-5 {
+    -webkit-line-clamp: 5; }
+
 .section-title {
   text-transform: uppercase;
-  font-size: .85rem;
+  font-size: 0.85rem;
   letter-spacing: 1.2px;
   color: #f79930;
   font-weight: 600;
@@ -48,7 +62,7 @@ img {
   text-align: center; }
 
 .section-subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 1.2px;
   font-weight: 700;
   text-align: center;
@@ -133,7 +147,7 @@ img {
   .rec-pagination.bkVSTc {
     margin-top: 0px; }
   .rec-pagination button.rec-dot {
-    margin-right: .35rem;
+    margin-right: 0.35rem;
     width: 15px;
     height: 15px;
     background: #1a3649;
@@ -304,6 +318,28 @@ img {
         .screen-home #showcase-wrapper .showcase__info .cta a,
         .screen-home .showcase-wrapper .showcase__info .cta a {
           margin-right: 1rem; }
+  .screen-home #about-news.about-news .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin: auto;
+    padding: 2rem 0; }
+  .screen-home #about .section-title, .screen-home #about .section-subtitle,
+  .screen-home .about .section-title,
+  .screen-home .about .section-subtitle {
+    text-align: left; }
+  .screen-home #about .info p,
+  .screen-home .about .info p {
+    padding: 2rem 0;
+    font-weight: 500;
+    font-size: 1.2rem; }
+  .screen-home #news .list-heading,
+  .screen-home .news .list-heading {
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    color: #f4f4f4;
+    font-size: 1.2rem;
+    background: #1a3649; }
   .screen-home #projects,
   .screen-home .projects {
     padding: 4rem 0;
@@ -342,13 +378,13 @@ img {
           font-weight: 500;
           text-transform: uppercase;
           color: #f4f4f4;
-          font-size: .8rem;
+          font-size: 0.8rem;
           letter-spacing: 1.1px;
           display: flex;
           align-items: center; }
           .screen-home #projects .items .item a i,
           .screen-home .projects .items .item a i {
-            margin-left: .5rem;
+            margin-left: 0.5rem;
             color: #f79930; }
           .screen-home #projects .items .item a:hover,
           .screen-home .projects .items .item a:hover {
@@ -372,7 +408,7 @@ img {
         border-radius: 10px;
         overflow: visible;
         text-align: center;
-        transition: .5s; }
+        transition: 0.5s; }
         .screen-home #get-involved .items .item .icon,
         .screen-home .get-involved .items .item .icon {
           position: relative;
@@ -421,7 +457,7 @@ img {
         .screen-home .get-involved .items .item a {
           font-weight: 500;
           text-transform: uppercase;
-          font-size: .8rem;
+          font-size: 0.8rem;
           letter-spacing: 1.1px;
           display: flex;
           align-items: center;
