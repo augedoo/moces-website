@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import ScreenNavigationLinks from './ScreenNavigationLinks';
+import ScreenNavigationLinks from '../ScreenNavigationLinks';
 
 const Footer = () => {
   return (
@@ -211,8 +211,8 @@ const Footer = () => {
               Latest Posts
             </h1>
 
-            <div class='items'>
-              <div class='item'>
+            <div className='items'>
+              <div className='item'>
                 {/* amotech/image */}
                 <a href='#!'>
                   <img
@@ -221,8 +221,8 @@ const Footer = () => {
                   />
                 </a>
                 <div>
-                  <div class='date'>
-                    <i class='fas fa-calendar-day'></i>
+                  <div className='date'>
+                    <i className='fas fa-calendar-day'></i>
                     <span>March 17, 2017</span>
                   </div>
                   <a href='#!'>
@@ -230,7 +230,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div class='item'>
+              <div className='item'>
                 {/* amotech/image */}
                 <a href='#!'>
                   <img
@@ -239,8 +239,8 @@ const Footer = () => {
                   />
                 </a>
                 <div>
-                  <div class='date'>
-                    <i class='fas fa-calendar-day'></i>
+                  <div className='date'>
+                    <i className='fas fa-calendar-day'></i>
                     <span>March 17, 2017</span>
                   </div>
                   <a href='#!'>
@@ -248,7 +248,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div class='item'>
+              <div className='item'>
                 {/* amotech/image */}
                 <a href='#!'>
                   <img
@@ -257,8 +257,8 @@ const Footer = () => {
                   />
                 </a>
                 <div>
-                  <div class='date'>
-                    <i class='fas fa-calendar-day'></i>
+                  <div className='date'>
+                    <i className='fas fa-calendar-day'></i>
                     <span>March 17, 2017</span>
                   </div>
                   <a href='#!'>
@@ -271,7 +271,7 @@ const Footer = () => {
 
           <div className='widget-newsletter'>
             <h1 className='footer-heading'>
-              <i class='far fa-newspaper'></i> Newsletter
+              <i className='far fa-newspaper'></i> Newsletter
             </h1>
             <form>
               <input
@@ -284,7 +284,7 @@ const Footer = () => {
 
             <div className='widget-footer-categories'>
               <h1 className='footer-heading'>
-                <i class='fas fa-tags'></i>
+                <i className='fas fa-tags'></i>
                 Categories
               </h1>
 

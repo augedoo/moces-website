@@ -1,11 +1,13 @@
 {
   "name": "moces-website",
+  "proxy": "http://127.0.0.1:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
+    "axios": "^0.21.1",
     "concurrently": "^6.0.0",
     "node-sass-chokidar": "^1.5.0",
     "react": "^17.0.1",
@@ -19,7 +21,6 @@
   "scripts": {
     "build": "react-scripts build",
     "start": "react-scripts start",
-    "dev": "concurrently \"npm run sass\" \"npm start\"",
     "sass": "node-sass-chokidar ./styles -o ./src --watch --recursive --usePolling"
   },
   "eslintConfig": {

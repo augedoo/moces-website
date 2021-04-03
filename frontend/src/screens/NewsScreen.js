@@ -1,35 +1,58 @@
 import React, { useState, useEffect, Fragment } from 'react';
+import axios from 'axios';
+
 import Pagination from '../components/Pagination';
-import newsArticles from '../newsArticles';
 import NewsShowcase from '../components/NewsShowcase';
 import ArticlesList from '../components/ArticlesList';
 import VolunteerSection from '../components/VolunteerSection';
 
 const NewsScreen = () => {
-  const [articles, setArticles] = useState();
+  const [articles, setArticles] = useState(null);
+  const [articlesLoading, setArticlesLoading] = useState(false);
 
   useEffect(() => {
-    setArticles(newsArticles);
+    const fetchArticles = async () => {
+      const { data } = await axios.get('/api/news/articles');
+      if (!data) return [];
+      setArticles(data);
+    };
+
+    fetchArticles();
   }, []);
+
+  if (articles !== null && articles.length === 0 && !articlesLoading) {
+    return (
+      <div className='no-article'>
+        <h1>No article found</h1>
+      </div>
+    );
+  }
 
   return (
     <Fragment>
       <section id='screen-news' className='screen-news bg-light'>
-        {articles && articles.length >= 1 && (
-          <NewsShowcase article={articles[0]} />
-        )}
+        <div>
+          {articles !== null && !articlesLoading && (
+            <NewsShowcase article={articles[0]} />
+          )}
+        </div>
+
         <div className='container articles-container'>
-          <div className='top-section'>
-            <h1>Recent News</h1>
-            <form className='search'>
-              <input
-                type='text'
-                placeholder='Search article'
-                className='form-input'
-              />
-            </form>
-          </div>
-          <ArticlesList articles={articles} />
+          {articles !== null && !articlesLoading ? (
+            <Fragment>
+              <div className='top-section'>
+                <h1>Recent News</h1>
+                <form className='search'>
+                  <input
+                    type='text'
+                    placeholder='Search article'
+                    className='form-input'
+                  />
+                </form>
+              </div>
+              <ArticlesList articles={articles} />
+            </Fragment>
+          ) : null}
         </div>
 
         <div className='container'>

@@ -53,7 +53,7 @@ img {
     -webkit-line-clamp: 5; }
 
 .section-title {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 0.85rem;
   letter-spacing: 1.2px;
   color: #f79930;
@@ -66,7 +66,7 @@ img {
   letter-spacing: 1.2px;
   font-weight: 700;
   text-align: center;
-  text-transform: capitalize; }
+  text-transform: uppercase; }
 
 .asBox {
   padding: 30px;
@@ -176,6 +176,7 @@ img {
   outline: none;
   border: none;
   font-weight: 500;
+  border-radius: 3px;
   background: #f4f4f4;
   color: #333;
   display: inline-block;
@@ -250,7 +251,7 @@ img {
   .screen-home #showcase-wrapper,
   .screen-home .showcase-wrapper {
     position: relative;
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -258,7 +259,7 @@ img {
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
-    background-position: center 70%;
+    background-position: center 20%;
     overflow: hidden; }
     .screen-home #showcase-wrapper::before,
     .screen-home .showcase-wrapper::before {
@@ -268,8 +269,8 @@ img {
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(0, 0, 0, 0.35);
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.35) 20%, rgba(28, 56, 74, 0.1) 100%);
+      background: rgba(0, 0, 0, 0.25);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.35) 40%, rgba(28, 56, 74, 0.5) 100%, to bottom, rgba(0, 0, 0, 0.35) 40%, rgba(28, 56, 74, 0.5) 100%);
       z-index: 1; }
     .screen-home #showcase-wrapper .container,
     .screen-home .showcase-wrapper .container {
@@ -507,6 +508,12 @@ img {
 
 .screen-news {
   background: #edf2f9; }
+  .screen-news .no-article {
+    margin-top: 6rem;
+    text-align: center; }
+    .screen-news .no-article h1 {
+      font-size: 2rem;
+      color: #1a3649; }
   .screen-news .news-showcase {
     position: relative;
     z-index: 1 !important;
@@ -807,7 +814,7 @@ img {
     display: flex;
     justify-content: flex-end; }
     .main-header ul.auth-links li {
-      margin-right: 1rem; }
+      margin-left: 1rem; }
 
 .form-group {
   color: #333;

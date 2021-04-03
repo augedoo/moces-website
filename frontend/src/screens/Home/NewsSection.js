@@ -13,7 +13,7 @@ const NewsSection = () => {
     }
 
     return newsArticles.map((article) => (
-      <li>
+      <li key={article._id}>
         <h3>{article.title}</h3>
         <p className='line-clamped'></p>
       </li>

@@ -14,7 +14,7 @@ const ShowcaseSlide2 = () => {
             or social background.
           </p>
           <div className='cta'>
-            <a href='#!' className='btn btn-large btn-primary'>
+            <a href='#!' className='btn btn-large btn-light'>
               Become a volunteer
             </a>
           </div>

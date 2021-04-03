@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import ScreenNavigationLinks from './ScreenNavigationLinks';
+import ScreenNavigationLinks from '../ScreenNavigationLinks';
 
 const Header = () => {
   const [currentPath, setCurrentPath] = useState(null);
 
   useEffect(() => {
     setCurrentPath(window.location.pathname);
-
     // eslint-disable-next-line
   }, [window.location, currentPath]);
 
@@ -26,7 +25,7 @@ const Header = () => {
 
         <ScreenNavigationLinks />
 
-        {/* <ul className='auth-links'>
+        <ul className='auth-links'>
           <li>
             <Link
               href='/login'
@@ -47,7 +46,7 @@ const Header = () => {
               Join Us
             </Link>
           </li>
-        </ul> */}
+        </ul>
       </div>
     </header>
   );

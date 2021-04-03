@@ -13,7 +13,7 @@ const ShowcaseSlide3 = () => {
             Share your clothes, food or anything with the need.
           </p>
           <div className='cta'>
-            <a href='#!' className='btn btn-large btn-primary'>
+            <a href='#!' className='btn btn-large btn-light'>
               Donate
             </a>
           </div>

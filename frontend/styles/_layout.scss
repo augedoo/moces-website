@@ -6,7 +6,7 @@
     .showcase {
       &-wrapper {
         position: relative;
-        height: 85vh;
+        height: 75vh;
         width: 100%;
         padding: 2rem;
         margin-bottom: 2rem;
@@ -14,7 +14,7 @@
         background-size: cover;
         object-fit: cover;
         background-repeat: no-repeat;
-        background-position: center 70%;
+        background-position: center 20%;
         overflow: hidden;
 
         &::before {
@@ -24,11 +24,14 @@
           position: absolute;
           top: 0;
           left: 0;
-          background: rgba($color: #000000, $alpha: 0.35);
+          background: rgba($color: #000000, $alpha: 0.25);
           background: linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.35) 20%,
-            rgba(28, 56, 74, 0.1) 100%
+            rgba(0, 0, 0, 0.35) 40%,
+            rgba(28, 56, 74, 0.5) 100%,
+            to bottom,
+            rgba(0, 0, 0, 0.35) 40%,
+            rgba(28, 56, 74, 0.5) 100%
           );
           z-index: 1;
         }
@@ -341,13 +344,22 @@
             rgba(247, 153, 48, 0) 40%,
             rgba(247, 153, 48, 0.8) 100%
           );
-        // background: transparentize($color: $primary-color, $amount: 0.7);
       }
     }
   }
 
   &-news {
     background: #edf2f9;
+
+    .no-article {
+      margin-top: 6rem;
+      text-align: center;
+
+      h1 {
+        font-size: 2rem;
+        color: $secondary-color;
+      }
+    }
 
     .news-showcase {
       position: relative;
@@ -764,5 +776,11 @@
         }
       }
     }
+  }
+
+  &-login {
+  }
+
+  &-register {
   }
 }

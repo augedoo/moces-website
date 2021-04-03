@@ -20,7 +20,7 @@ const ShowcaseSlide1 = () => {
             general.
           </p>
           <div className='cta'>
-            <a href='#!' className='btn btn-large btn-primary'>
+            <a href='#!' className='btn btn-large btn-light'>
               Learn More
             </a>
             <a href='#!' className='btn btn-large btn-secondary'>
